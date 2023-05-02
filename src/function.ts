@@ -40,3 +40,57 @@ const personn: {
     }
 
 }
+
+// default parameter
+function add3(num1: number= 10, num2: number): number{ // not allowed
+    return num1 + num2;
+}
+
+function add4(num1: number, num2: number = 10): number{
+    return num1 + num2;
+}
+
+add3(1, 2) // allowed
+// add3(1) // not allowed
+
+add4(1, 2) // allowed
+add4(1) // allowed
+
+
+// spread operator
+const bondhura = ['musfira', 'nusaiba', 'mahi']
+const bondhura2 = ['siam', 'hafsa', 'sufiyan']
+const myBestFriend = {
+    firstName: 'musfira',
+    age: 20,
+    company: 'programming hero',
+}
+
+const [bestFriend] = bondhura;
+const {firstName} = myBestFriend;
+const {firstName: string } = myBestFriend; // not going to take it as a string type instead it will take it as a name alias mean firstName will be known as string
+// if we console.log(string) it will show the firstName value
+console.log(string)
+
+
+
+// bondhura.push(...bondhura2)
+// console.log(bondhura);
+
+
+// rest parameter
+const greetFriends = (friend1: string, friend2: string, friend3: string) : void => {
+    console.log(`Hello ${friend1}, ${friend2}, ${friend3}`);
+}
+// greetFriends('musfira', 'nusaiba', 'mahi', 'bhai') // not allowed
+
+// use this instead
+const greetFriendss = (...friends: string[]) : void => {
+    friends.forEach(friend => {
+        console.log(`Hello ${friend}`);
+    }
+    )
+}
+greetFriendss('musfira', 'nusaiba', 'mahi', 'bhai', 'siam', 'hafsa', 'sufiyan', 'arekjon') // allowed
+
+// Array and object destructuring
