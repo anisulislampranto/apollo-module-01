@@ -30,8 +30,8 @@ getMayCarSpeed(true);
 
 // Never type
 // Never Ever return anything
-function throwErr(message: string): never {
-    throw new Error(message);
-}
+// function throwErr(message: string): never {
+//     throw new Error(message);
+// }
 
-throwErr('err hoise')
+// throwErr('err hoise')
