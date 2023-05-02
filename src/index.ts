@@ -34,7 +34,7 @@ numberr.push('hello') // allowed
 numberr.push(true) // allowed
 
 // tuple
-const user: [number, string] = [999, 'name'] 
+const userr: [number, string] = [999, 'name'] 
 
 
 // Primitive types
