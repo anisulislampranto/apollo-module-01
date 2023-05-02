@@ -24,7 +24,7 @@ ccccourse = 999
 const number:number[] = [1,2,3,4,5]
 const names:string[] = ['1','2','3','4','5']
 
-number[0] = 'hello' // not allowed
+// number[0] = 'hello' // not allowed
 number[0] = 999 // allowed
 
 // Union type

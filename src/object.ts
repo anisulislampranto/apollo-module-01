@@ -14,4 +14,4 @@ const user: {
     wife: 'kaki',
 }
 
-user.institute = 'programming hero' // not allowed
+// user.institute = 'programming hero' // not allowed
