@@ -21,6 +21,21 @@ let ccccourse = undefined
 ccccourse = 'hello'
 ccccourse = 999
 
+const number:number[] = [1,2,3,4,5]
+const names:string[] = ['1','2','3','4','5']
+
+number[0] = 'hello' // not allowed
+number[0] = 999 // allowed
+
+// Union type
+const numberr = [1,'hello', true]
+numberr.push(999) // allowed
+numberr.push('hello') // allowed
+numberr.push(true) // allowed
+
+// tuple
+const user: [number, string] = [999, 'name'] 
+
 
 // Primitive types
 // string
